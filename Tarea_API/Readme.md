@@ -2,31 +2,31 @@
 
 ## Conseguir todos:
 
-![Imagen 1](Tarea_API/image1.png)
+Tarea_API/image1.png
 
 ---
 
 ## Conseguir con algún filtro:
 
-![Imagen 2](Tarea_API/image2.png)
+Tarea_API/image2.png
 
 ---
 
 ## Conseguir con filtro de número:
 
-![Imagen 3](Tarea_API/image3.png)
+Tarea_API/image3.png
 
 ---
 
 ## Conseguir habilidad:
 
-![Imagen 4](Tarea_API/image4.png)
+Tarea_API/image4.png
 
 ---
 
 ## Query params:
 
-![Imagen 5](Tarea_API/image5.png)
+Tarea_API/image5.png
 
 ---
 
