@@ -1,0 +1,188 @@
+{
+  "info": {
+    "_postman_id": "aa866764-919d-4790-ba9c-a9e22fd866db",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52906801",
+    "_collection_link": "https://go.postman.co/collection/52906801-aa866764-919d-4790-ba9c-a9e22fd866db?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Conseguir todos",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Complete test\",function(){\r",
+              "\r",
+              "pm.response.to.have.status(200);\r",
+              "\r",
+              "\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Great number pokemons\", function(){\r",
+              "\r",
+              "    const jsondata = pm.response.json();\r",
+              "    const limit= pm.request.url.query.get(\"limit\")|| 20;\r",
+              "    pm.expect(jsondata.results).to.be.an(\"array\");\r",
+              "    pm.expect(jsondata.results.length).to.equal(limit);\r",
+              "\r",
+              "\r",
+              "});\r",
+              "\r",
+              "\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASEURL}}/pokemon",
+          "host": [
+            "{{BASEURL}}"
+          ],
+          "path": [
+            "pokemon"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "info_unica",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASEURL}}/pokemon/charizard",
+          "host": [
+            "{{BASEURL}}"
+          ],
+          "path": [
+            "pokemon",
+            "charizard"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Conseguir por numero",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Complete test number \", function(){\r",
+              "    pm.response.to.have.status(200);\r",
+              "\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASEURL}}/pokemon/1",
+          "host": [
+            "{{BASEURL}}"
+          ],
+          "path": [
+            "pokemon",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Conseguir habilidad",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASEURL}}/ability/{{ability_speedboost}}",
+          "host": [
+            "{{BASEURL}}"
+          ],
+          "path": [
+            "ability",
+            "{{ability_speedboost}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear pokemon",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"count\": 1350,\r\n  \"next\": \"https://pokeapi.co/api/v2/pokemon/?offset=130&limit=1350\",\r\n  \"previous\": null,\r\n  \"results\": [\r\n    {\r\n      \"name\": \"santiago\",\r\n      \"url\": \"https://pokeapi.co/api/v2/pokemon/1/\"\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASEURL}}/pokemon/",
+          "host": [
+            "{{BASEURL}}"
+          ],
+          "path": [
+            "pokemon",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "query params",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BASEURL}}/pokemon/?offset=0&limit=1200",
+          "host": [
+            "{{BASEURL}}"
+          ],
+          "path": [
+            "pokemon",
+            ""
+          ],
+          "query": [
+            {
+              "key": "offset",
+              "value": "0"
+            },
+            {
+              "key": "limit",
+              "value": "1200"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
