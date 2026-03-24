@@ -8,25 +8,22 @@
 
 ## Conseguir con algún filtro:
 
-Tarea_API/image2.png
+![Imagen 2](Imagen2.png)
 
 ---
 
 ## Conseguir con filtro de número:
 
-Tarea_API/image3.png
+![Imagen 3](Imagen3.png)
 
 ---
 
 ## Conseguir habilidad:
-
-Tarea_API/image4.png
-
 ---
-
+![Imagen 4](Imagen4.png)
 ## Query params:
 
-Tarea_API/image5.png
+![Imagen 5](Imagen5.png)
 
 ---
 
