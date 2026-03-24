@@ -2,7 +2,7 @@
 
 ## Conseguir todos:
 
-![Imagen 1](image1.png)
+![Imagen 1](Imagen1.png)
 
 ---
 
