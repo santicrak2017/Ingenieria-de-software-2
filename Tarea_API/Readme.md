@@ -2,7 +2,7 @@
 
 ## Conseguir todos:
 
-Tarea_API/image1.png
+Tarea_API/Imagen1.png
 
 ---
 
