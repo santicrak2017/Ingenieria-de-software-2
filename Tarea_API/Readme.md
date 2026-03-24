@@ -2,7 +2,7 @@
 
 ## Conseguir todos:
 
-Tarea_API/Imagen1.png
+![Imagen 1](image1.png)
 
 ---
 
