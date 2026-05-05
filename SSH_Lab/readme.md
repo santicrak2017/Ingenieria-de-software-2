@@ -52,4 +52,5 @@ Ya en otro terminal miraremos primero si esta conectado la dirreción IP con un 
 
 ![Imagen_5](Imagen_5.jpeg)
 
-![Imagen_6(Imagen_6.jpeg)
+![Imagen_6](Imagen_6.jpeg)
+
