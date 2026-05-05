@@ -1,4 +1,4 @@
-#Metodo SSH
+# Metodo SSH
 ## -**Introduccion:**
 ---
 Durante la clase hemos visto varias maneras en la que podremos asegurar de una mejor manera nuestra información como JSON, Pero se miro una nueva alternativa como lo es SSH.
@@ -28,3 +28,4 @@ Se ponen de acuerdo en:
 
 ---
 # Proceso de instalación.
+Si estamos en linux, pues ya tenemos un cliente SH , entonces no debemos crear uno como lo tendriamos que hacer en windows
