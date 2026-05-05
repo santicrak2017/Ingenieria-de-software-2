@@ -1,11 +1,11 @@
 #Metodo SSH
 ## -**Introduccion:**
 ---
-### Durante la clase hemos visto varias maneras en la que podremos asegurar de una mejor manera nuestra información como JSON, Pero se miro una nueva alternativa como lo es SSH.
+Durante la clase hemos visto varias maneras en la que podremos asegurar de una mejor manera nuestra información como JSON, Pero se miro una nueva alternativa como lo es SSH.
 
-### Este es una protocolo en el cual permite al cliente y servidor ponerse de acuerdo para un metodo de autenticación , con el cual los dos dispositivos de podran comunicar y de esa manera poder tener una conexión segura de los archivos que se vayan transmitiendo.
+Este es una protocolo en el cual permite al cliente y servidor ponerse de acuerdo para un metodo de autenticación , con el cual los dos dispositivos de podran comunicar y de esa manera poder tener una conexión segura de los archivos que se vayan transmitiendo.
 
-### La manera en la que funciona el protocolo esta basado en:
+La manera en la que funciona el protocolo esta basado en:
 ### - **Establecimiento de la conexión**
   Cuando el cliente (tu PC) se conecta al servidor:
 
