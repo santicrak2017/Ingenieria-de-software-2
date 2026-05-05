@@ -29,4 +29,4 @@ Se ponen de acuerdo en:
 ---
 # Proceso de instalación.
 Si estamos en linux, pues ya tenemos un cliente SH , entonces no debemos crear uno como lo tendriamos que hacer en windows
-![Descripción de la imagen](Ingenieria-de-software-2/SSH_Lab/VirtualBox_2024_Logo.svg.png)
+![Descripción de la imagen](SSH_Lab/VirtualBox_2024_Logo.svg.png)
