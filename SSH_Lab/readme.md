@@ -28,5 +28,21 @@ Se ponen de acuerdo en:
 
 ---
 # Proceso de instalación.
-Si estamos en linux, pues ya tenemos un cliente SH , entonces no debemos crear uno como lo tendriamos que hacer en windows
-![Descripción de la imagen](SSH_Lab/VirtualBox_2024_Logo.svg.png)
+Si estamos en linux, pues ya tenemos un cliente SH para poder conectarlos , entonces no debemos crear uno como lo tendriamos que hacer en windows. En el cual podremos usar un entorno virtual para hacer el cliente SH.
+![VitualBox](VirtualBox_2024_Logo.svg.png)
+
+
+Ahora instalado el virtual box le colocamos una iso de linux , en mi caso coloque la ultima de ubuntu. Ya con esto debemos colocar el usuario y la contraseña con el cual podremos conectarnos con el usuario y poder pasar la informacion de manera segura. Despues de eso ya iniciamos esta instancia y comenzamos a instalar el SSH si no esta instalado .
+
+
+Ya con eso hecho el paso a seguir es mirar con los comandos de status si ya esta iniciada la conexion, si aun no es el que caso la iniciamos y volvemos a mirar su estado. Terminado esto , lo que debmos hacer es identificar cual es nuestro usuario y comprobar que tenga contraseña , esto se mira con el comando "passwd -S "nombre del usuario" " y si tiene una parte con NP , es que debemos asignarle una contraseña.
+
+
+
+
+Ya configurada las credenciales para la conexión debemos mirar que dirreción IP tenemos para poderlo conectar ahora con el otro dispositivo.
+
+
+
+
+Ya en otro terminal miraremos primero si esta conectado la dirreción IP con un ping a este , si ya funciona y pasa los paquetes ahora debemos iniciar la conexion SSH y ya con este podremos modificar informacion de manera segura , como lo puede ser una texto.
