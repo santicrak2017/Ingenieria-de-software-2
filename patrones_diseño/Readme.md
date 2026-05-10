@@ -30,7 +30,7 @@ Al final del código se prueba todo: se crea `director_en_ventas` y toma una dec
 ---
 
 ## Caso 2 — Singleton + Facade
-![image_2](Imagen_2.jpeg)
+![image_3](IMAGEN_3.jpeg)
 Este código parte del mismo `Director` Singleton sin tocarlo, y agrega encima una capa nueva llamada `DirectorFacade`.
 
 ### Método `__init__` del Facade
@@ -52,3 +52,52 @@ Devuelve la lista `decisiones` del Director sin exponer el objeto Director en s�
 ### Prueba del patrón
 
 Al usarlo, se crea una sola instancia del Facade, y desde ahí se llaman los dos métodos. El resultado es que el historial queda ordenado con etiquetas, y ningún módulo externo tuvo que saber que existe un Singleton ni cómo construirlo.
+
+
+# Patrones de diseño: Singleton, Facade y Observer
+
+
+## Caso 3 — Singleton + Facade + Observer
+![image_2](Imagen_2.jpeg)
+
+Este código agrega el patrón de comportamiento **Observer** sobre los dos anteriores.
+
+### ¿Por qué Observer y no otro patrón de comportamiento?
+
+
+
+El `Director` toma decisiones que afectan a toda la empresa. En lugar de que él llame uno por uno a cada departamento, con Observer los departamentos se **suscriben** y se enteran automáticamente. El Director no necesita saber quiénes lo escuchan.
+
+### Clase `Observador` (interfaz base)
+
+Define el contrato que todos los departamentos deben cumplir: tener un método `actualizar(decision)`. Esto garantiza que el Director pueda notificar a cualquier observador sin importar de qué departamento se trate.
+
+### Clases `DepartamentoVentas`, `DepartamentoRH`, `DepartamentoFinanzas`
+
+Cada una implementa `actualizar` a su manera. Cuando el Director notifica, cada departamento reacciona de forma independiente. Si mañana se agrega un `DepartamentoLegal`, solo se crea la clase y se suscribe, sin tocar nada más.
+
+### Cambios en el `Director` (Singleton)
+
+Se agregan dos elementos nuevos:
+
+- `self._observadores = []`: lista donde se registran todos los suscriptores.
+- `agregar_observador(observador)`: permite que cualquier departamento se suscriba.
+- `_notificar(decision)`: recorre la lista y llama a `actualizar` en cada observador justo después de tomar una decisión.
+
+### Cambios en el `DirectorFacade`
+
+El Facade ahora también se encarga de registrar los observadores al inicializarse. Esto mantiene toda la configuración en un solo lugar, y los módulos externos no tienen que preocuparse por suscribirse manualmente.
+
+### Flujo completo de una decisión
+
+| Patrón | Para qué sirve | ¿Aplica aquí? |
+|---|---|---|
+| **Observer** | Notifica automáticamente a varios módulos cuando algo cambia | ✅ Sí, es exactamente lo que necesitamos |
+| Strategy | Intercambiar algoritmos en tiempo de ejecución | ❌ No hay algoritmos que cambiar |
+| Command | Encapsular acciones como objetos para ejecutarlas luego | ❌ Añade complejidad innecesaria |
+| Chain of Responsibility | Pasar una petición por una cadena de manejadores | ❌ No hay cadena de aprobación |
+---
+
+## Conclusión
+
+
