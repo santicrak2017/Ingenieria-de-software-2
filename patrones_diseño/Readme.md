@@ -5,6 +5,7 @@
 ## Caso 1 — Singleton puro
 
 El código define una clase `Director` que representa al único director de una empresa.
+![image_1](Imagen_1.jpeg)
 
 ### Declaración de la instancia
 
@@ -29,7 +30,7 @@ Al final del código se prueba todo: se crea `director_en_ventas` y toma una dec
 ---
 
 ## Caso 2 — Singleton + Facade
-
+![image_2](Imagen_2.jpeg)
 Este código parte del mismo `Director` Singleton sin tocarlo, y agrega encima una capa nueva llamada `DirectorFacade`.
 
 ### Método `__init__` del Facade
