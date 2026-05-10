@@ -30,7 +30,7 @@ Al final del código se prueba todo: se crea `director_en_ventas` y toma una dec
 ---
 
 ## Caso 2 — Singleton + Facade
-![image_3](IMAGEN_3.jpeg)
+![image_2](Imagen_2.jpeg)
 Este código parte del mismo `Director` Singleton sin tocarlo, y agrega encima una capa nueva llamada `DirectorFacade`.
 
 ### Método `__init__` del Facade
@@ -58,7 +58,7 @@ Al usarlo, se crea una sola instancia del Facade, y desde ahí se llaman los dos
 
 
 ## Caso 3 — Singleton + Facade + Observer
-![image_2](Imagen_2.jpeg)
+![image_3](IMAGEN_3.jpeg)
 
 Este código agrega el patrón de comportamiento **Observer** sobre los dos anteriores.
 
