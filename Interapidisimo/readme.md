@@ -1,0 +1,2 @@
+#Prueba tecnica acerca de interapidisimo y como hacerlo.
+###Esta es una prueba tecnica, en donde se mira los errores que puede haber en un endpoint y la extracción de datos que hay en estos , como por ejemplo el poder a traves de unos endpint poder crear una base de datos en donde esten consumidas todas esas enpoints, ademas de poder ver si estas se puede verificar para prueba de version de datos . Ademas de otros datos.
