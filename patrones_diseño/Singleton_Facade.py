@@ -14,7 +14,7 @@
         print(f"Director {self.nombre} decidió: {decision}")
 
 
-# ── FACADE (clase nueva) ──────────────────────────────────────────────
+# FACADE 
 class DirectorFacade:
     """
     Fachada: los módulos externos solo hablan con esta clase.
@@ -37,7 +37,7 @@ class DirectorFacade:
         return self._director.decisiones
 
 
-# ── USO ───────────────────────────────────────────────────────────────
+#USO 
 facade = DirectorFacade()
 
 facade.decision_ventas("Bajar precios un 10%")
