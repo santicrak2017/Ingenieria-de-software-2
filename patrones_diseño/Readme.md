@@ -4,16 +4,16 @@
 
 ## Caso 1 — Singleton puro
 
-El código define una clase `Director` que representa al único director de una empresa.
+El código define una clase "Director" que representa al único director de una empresa.
 ![image_1](Imagen_1.jpeg)
 
 ### Declaración de la instancia
 
-Lo primero que hace es declarar `_instancia = None` como variable de clase, que es el "cajón" donde se va a guardar la única instancia.
+Lo primero que hace es declarar "_instancia = None" como variable de clase, que es el "cajón" donde se va a guardar la única instancia.
 
 ### Método `__new__`
 
-Es el método que Python llama antes de crear cualquier objeto. Aquí está el truco del Singleton: revisa si `_instancia` está vacía, y solo si lo está crea el objeto con `super().__new__(cls)`. Si ya existe, simplemente devuelve el que ya hay. Así bloquea cualquier intento de crear un segundo director.
+Es el método que Python llama antes de crear cualquier objeto. Aquí está el truco del Singleton: revisa si "_instancia" está vacía, y solo si lo está crea el objeto con "super().__new__(cls)". Si ya existe, simplemente devuelve el que ya hay. Así bloquea cualquier intento de crear un segundo director.
 
 ### Método `__init__`
 
