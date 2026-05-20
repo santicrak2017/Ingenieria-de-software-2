@@ -88,16 +88,6 @@ Se agregan dos elementos nuevos:
 
 El Facade ahora también se encarga de registrar los observadores al inicializarse. Esto mantiene toda la configuración en un solo lugar, y los módulos externos no tienen que preocuparse por suscribirse manualmente.
 
-### Flujo completo de una decisión
 
-| Patrón | Para qué sirve | ¿Aplica aquí? |
-|---|---|---|
-| **Observer** | Notifica automáticamente a varios módulos cuando algo cambia | ✅ Sí, es exactamente lo que necesitamos |
-| Strategy | Intercambiar algoritmos en tiempo de ejecución | ❌ No hay algoritmos que cambiar |
-| Command | Encapsular acciones como objetos para ejecutarlas luego | ❌ Añade complejidad innecesaria |
-| Chain of Responsibility | Pasar una petición por una cadena de manejadores | ❌ No hay cadena de aprobación |
----
-
-## Conclusión
 
 
