@@ -49,7 +49,6 @@ class DepartamentoFinanzas(Observador):
 class DirectorFacade:
     def __init__(self):
         self._director = Director()
-        # El Facade también registra los observadores por comodidad
         self._director.agregar_observador(DepartamentoVentas())
         self._director.agregar_observador(DepartamentoRH())
         self._director.agregar_observador(DepartamentoFinanzas())
